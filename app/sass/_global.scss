@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: $fontsize;
+  font-family: $fontfamily;
+  color: $textcolor;
+  line-height: $lineheight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingfamily;
+  font-weight: 700;
+  color: $headingcolor;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.supheading {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &.accent {
+    font-family: $headingfamily;
+    font-weight: 700;
+    color: $accent;
+  }
+}
+
+img,
+input {
+  display: block;
+}
+
+.button {
+  color: white;
+  background-color: $accent;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  border-radius: 9999px;
+
+  &.hover {
+    background-color: $headingcolor;
+    transition: 0.1s linear background-color;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.image-container {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
